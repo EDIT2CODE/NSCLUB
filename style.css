@@ -1,3 +1,8 @@
+:root{
+    --oldschool: red;
+    --electro: blue;
+    --karaoke: green;
+}
 
 html {
     scrollbar-gutter: stable;
@@ -37,6 +42,18 @@ main {
     width: 100%;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
 
 header {
     display: flex;
@@ -96,7 +113,7 @@ nav ul {
 nav ul li {
     background-color: rgb(240, 250, 255);
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 5px 5px;
     transition: transform 0.2s ease;
 }
 
@@ -104,7 +121,7 @@ nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    padding: 5px;
+    padding: 5px 10px;
     -webkit-user-drag: none;
     font-size: 14px;
     transition: all 0.3s ease;
@@ -123,7 +140,45 @@ nav ul li.active a {
     color: white;
 }
 
-/* Hamburger Menu */
+.event-list{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.event{
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(255, 146, 224), rgb(255, 255, 255));
+}
+
+.event:hover{
+    box-shadow: 0 0 20px 5px #e048db;
+    transform: scale(1.02);
+}
+
+.infos{
+    border: solid 2px #e048db;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+
+[type="oldschool"]{
+    box-shadow: -5px 0 0 0 var(--oldschool);
+}
+[type="electro"]{
+    box-shadow: -5px 0 0 0 var(--electro);
+}
+[type="karaoke"]{
+    box-shadow: -5px 0 0 0 var(--karaoke);
+}
+
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -207,7 +262,7 @@ nav ul li.active a {
     text-decoration: underline;
 }
 
-/* Map Container */
+
 .map-container {
     margin: 20px 0;
     overflow: hidden;
