@@ -165,6 +165,8 @@ nav ul li.active a {
     border: solid 2px #e048db;
     border-radius: 8px;
     width: fit-content;
+    transition: transform .7s;
+    transform-origin:center;
 }
 
 .menu-items {
@@ -211,8 +213,7 @@ nav ul li.active a {
 }
 
 .menu-section h2{
-    transition: transform .7s;
-    transform-origin:center;
+
 }
 
 .menu-section:hover h2{
