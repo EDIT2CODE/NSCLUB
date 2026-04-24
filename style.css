@@ -138,6 +138,77 @@ nav ul li.active a {
     color: white;
 }
 
+.menu-section {
+    text-align: center;
+    margin: 20px;
+    background-color: #666666;
+    border-radius: 25px;
+    padding: 15px;
+    border: solid 2px #002fff;
+}
+
+.menu-section:hover {
+    box-shadow: 0 0 20px 5px #002fff;
+    transform: scale(1.02);
+    background-color: #888888;
+}
+
+.menu-section h2 {
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: #555555;
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border: solid 2px #e048db;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top left, rgb(255, 181, 245), rgb(210, 49, 210));
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.menu-item{
+    border: solid 2px #e048db;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.menu-section{
+    perspective:1000px;
+}
+
+.menu-section h2{
+    transition: transform .7s;
+    transform-origin:center;
+}
+
+.menu-section:hover h2{
+    transform: rotateX(360deg);
+}
+
+.menu-item:hover{
+    transform: scale(1.02);
+    rotate: 4deg;
+
+}
+
+.menu-item .price{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    justify-content: bottom;
+}
+
 .event-list{
     margin-top: 20px;
     display: flex;
